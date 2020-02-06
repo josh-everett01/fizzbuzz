@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fizzbuzz</h1>
+    <ul id="myList">
+      <script>
+        var i;
+        func;
+        for (i = 1; i <= 1000; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            var node = document.createElement("LI");
+            var textNode = document.createTextNode("fizzbuzz");
+            node.appendChild(textNode);
+            document.getElementById("myList").appendChild(node);
+          } else if (i % 3 == 0) {
+            var node = document.createElement("LI");
+            var textNode = document.createTextNode("fizz");
+            node.appendChild(textNode);
+            document.getElementById("myList").appendChild(node);
+          } else if (i % 5 == 0) {
+            var node = document.createElement("LI");
+            var textNode = document.createTextNode("buzz");
+            node.appendChild(textNode);
+            document.getElementById("myList").appendChild(node);
+          } else {
+            var node = document.createElement("LI");
+            var textNode = document.createTextNode(i);
+            node.appendChild(textNode);
+            document.getElementById("myList").appendChild(node);
+            console.log(i);
+          }
+        }
+        // var node = document.createElement("LI");                 // Create a <li> node
+        // var textnode = document.createTextNode("Water");         // Create a text node
+        // node.appendChild(textnode);                              // Append the text to <li>
+      </script>
+    </ul>
+
+    <button id="clear button" onclick="clearScreen()">clear screen</button>
+    <script>
+      function clearScreen() {
+        var element = document.getElementById("myList");
+        element.remove();
+      }
+      var fizzButton = document;
+    </script>
+  </body>
+</html>
